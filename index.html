@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="icon" href="https://pbs.twimg.com/media/GvX_ehCWAAAvqMU?format=png&name=900x900">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; color: #fff; }
+
+    nav {
+      background: #ffffff;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 10;
+    }
+    nav img {
+      height: 60px;
+      width: auto;
+    }
+
+    .hero {
+      position: relative;
+      height: calc(100vh - 100px);
+      margin-top: 100px;
+      background: url('https://redactie.rtl.nl/sites/default/files/content/images/2025/06/12/Scherm%C2%ADafbeelding%202025-06-12%20om%2016.57.06.png?itok=yWeU6noD&offsetX=0&offsetY=0&cropWidth=815&cropHeight=459&width=1024&height=576&impolicy=dynamic') center/cover no-repeat;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-weight: 600;
+      font-size: 4rem;
+      letter-spacing: 4px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    section.services {
+      background: #202073;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    section.services h2 {
+      font-weight: 400;
+      font-size: 3rem;
+      margin-bottom: 60px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .service-item h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+    .service-item p {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.65rem;
+      color: #aaaaaa;
+      padding: 30px 20px;
+    }
+    .footer-cta {
+      margin-bottom: 15px;
+    }
+    .footer-cta a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-weight: 600;
+      background: #ffcc00;
+      color: #202073;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .footer-cta a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h1 { font-size: 2.8rem; }
+      section.services { padding: 60px 10px; }
+      section.services h2 { font-size: 2rem; margin-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <img src="https://irp.cdn-website.com/4b25e652/dms3rep/multi/ecSQ1R0mRWCrAOaSihhu_Bankzitters+1.png"
+         alt="Bankzitters logo">
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>DEALERTJE KOEN.NL</h1>
+      <p>Alleen maar tevreden kakkerklanten!!!</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Wat wij bieden</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Designer Kleding</h3>
+        <p>Maandspecial: Balenciaga jas</p>
+      </div>
+      <div class="service-item">
+        <h3>Kaviaar</h3>
+        <p>Maandspecial: Beluga kaviaar</p>
+      </div>
+      <div class="service-item">
+        <h3>Horloges</h3>
+        <p>Bestseller: Rolex Submariner</p>
+      </div>
+      <div class="service-item">
+        <h3>Jetverhuur</h3>
+        <p>Uw privéjet als een vliegende troon? Wij regelen het!</p>
+      </div>
+      <div class="service-item">
+        <h3>Champagne</h3>
+        <p>Exclusive: Dom Pérignon ’03</p>
+      </div>
+      <div class="service-item">
+        <h3>Jachten</h3>
+        <p>Maandspecial: Luxe jacht Charter</p>
+      </div>
+      <div class="service-item">
+        <h3>Handtassen</h3>
+        <p>Topmodel: Hermès Birkin</p>
+      </div>
+      <div class="service-item">
+        <h3>VIP Club</h3>
+        <p>Persoonlijke host en backstage passes</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-cta">
+      <a href="https://dealertjemilo.nl/" target="_blank">Check ook Dealertje Milo</a>
+    </div>
+    Disclaimer: de Nederlandse wetgeving verplicht ons te laten weten dat dit niet echt is.<br>
+    Deze site is niet gemaakt door het officiële Bankzitters-team.
+  </footer>
+
+</body>
+</html>
